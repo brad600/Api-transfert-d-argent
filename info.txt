@@ -1,0 +1,21 @@
+ Nous sommes un groupe d'Etudiants de la GL3B pour le cour de POD avec pour prof M. MBIA.
+Notre travail porte sur la conception d'une API DE TRANSFERT D'ARGENT avec le langage GO.
+
+L'architecture de notre API est comme suit:
+POD_API_TRANSFERT_ARGENT/config /
+	BASE_de_DONNEES.go
+	BDTest.go
+POD_API_TRANSFERT_ARGENT/controllers/
+	API_SERVER.go
+	API_ServerTest.go
+POD_API_TRANSFERT_ARGENT/models/
+	enregistreur.go
+	models_json_views.go
+POD_API_TRANSFERT_ARGENT/
+	main.go
+	table.go
+
+Dans le dossier config, nous avons les fichiers qui permettent la connexion à la base de données ainsi que la creation des tables
+Dans le dossier controller, nous avons le fichier qui fait la relation entre les requetes http et notre structure apiserver ainsi que la definition des routes de notre api
+Dans le dossier models, nous avons des fichiers qui lient notre structure apiserver avec les actions en base de données
+Le fichier main.go lance la connexion à notre base de données et lance le serveur http
